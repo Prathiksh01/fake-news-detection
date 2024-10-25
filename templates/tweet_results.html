@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Analysis Result</title>
+</head>
+<body>
+    <h1>Twitter Analysis for "{{ keyword }}"</h1>
+    <h2>Tweets:</h2>
+    <ul>
+        {% for index, row in tweets.iterrows() %}
+            <li>
+                <strong>{{ row['created_at'] }}</strong>: {{ row['text'] }}
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go back</a>
+</body>
+</html>

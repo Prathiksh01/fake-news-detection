@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection</title>
+</head>
+<body>
+    <h1>Fake News Detection</h1>
+    <form action="/predict" method="post">
+        <label for="article_text">Enter the news article text:</label><br>
+        <textarea id="article_text" name="article_text" rows="10" cols="50" required></textarea><br><br>
+        <input type="submit" value="Check for Fake News">
+    </form>
+    <form action="/tweet" method="post">
+        <label for="keyword">Enter keyword for Twitter analysis:</label><br>
+        <input type="text" id="keyword" name="keyword" required>
+        <input type="submit" value="Analyze Tweets">
+    </form>
+</body>
+</html>
